@@ -5,4 +5,5 @@
 ## Запуск:
 
 ```git clone https://github.com/IgorShum/Rb7parser.git```
+
 ```ruby parser.rb```
