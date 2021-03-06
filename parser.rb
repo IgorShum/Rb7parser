@@ -15,7 +15,6 @@ class Rb7parser
 
 	def load_html
 		html = URI.open(URL)
-		puts html.inspect
 		doc = Nokogiri::HTML(html)
 		parse(doc)
 	end
@@ -33,7 +32,7 @@ class Rb7parser
 	end
 
 	def top
-		@top_movies = @movies.sort_by{|key, _val| key[:seanses]}.last(3).reverse!
+		@top_movies = @movies.sort_by{|key| key[:seanses]}.last(3).reverse!
 	end
 end
 
